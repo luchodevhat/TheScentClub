@@ -129,13 +129,14 @@ body {
   transition: transform 0.3s ease;
 }
 
+
 .perfume-card:hover {
   transform: translateY(-5px);
 }
 
 .perfume-card img {
   width: 100%;
-  height: 200px; /* ajusta este valor */
+  height: 150px; /* ajusta este valor */
   object-fit: contain; /* evita que se recorte */
   border-radius: 10px;
 }
@@ -164,8 +165,6 @@ body {
 .perfume-card {
   scroll-snap-align: start;
 }
-
-
 
 hr {
   margin: 1rem 0;
@@ -11143,4 +11142,121 @@ p {
 
 .address strong {
   font-size: 1.2rem;
+}
+
+
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px;
+  color: white;
+}
+
+/* INFO */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.contact-info p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.contact-details {
+  margin-top: 25px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+}
+
+.input-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  color: rgba(255,255,255,0.6);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+/* Floating label */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 0.75rem;
+  background: #111;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/* Button */
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px;
+  }
 }
