@@ -3674,9 +3674,9 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-color:  white;;
+  --bs-nav-link-hover-color:  white;;
+  --bs-nav-link-disabled-color: white;;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -3689,7 +3689,7 @@ textarea.form-control-lg {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color:  white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3794,15 +3794,15 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
-  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: white;
+  --bs-navbar-disabled-color:  white;
+  --bs-navbar-active-color:  white;
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-color:  white;
+  --bs-navbar-brand-hover-color:  white;
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -3868,12 +3868,12 @@ textarea.form-control-lg {
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: var(--bs-navbar-color);
+  color: white;
 }
 .navbar-text a,
 .navbar-text a:hover,
 .navbar-text a:focus {
-  color: var(--bs-navbar-active-color);
+  color: white;
 }
 
 .navbar-collapse {
@@ -3990,6 +3990,7 @@ textarea.form-control-lg {
   font-weight: 400 !important;
   font-size: 0.95rem;
   letter-spacing: 1px;
+  color: white;
 }
 
 /* Ajuste para móvil */
@@ -4003,7 +4004,6 @@ textarea.form-control-lg {
     padding: 5px 0;
   }
 }
-
 
 
   .navbar-expand-md .navbar-nav-scroll {
@@ -10982,24 +10982,24 @@ p {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
-  color: #000;
+  color: white;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color:#000;
+  color: white;
   font-weight: 800;
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {  
-  color: #FFFFFF;
+  color: white;
 }
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: white;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #FFFFFF;
+    color: white;
   }
 }
 
@@ -11418,7 +11418,7 @@ p {
 .hero-content {
     position: relative;
     z-index: 3;
-    color: black;
+    color: white;
     top: 50%;
     transform: translateY(-50%);
 }
