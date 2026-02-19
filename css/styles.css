@@ -132,6 +132,7 @@ body {
 
 .perfume-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .perfume-card img {
@@ -153,6 +154,7 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .perfume-card button:hover {
@@ -3994,12 +3996,14 @@ textarea.form-control-lg {
 @media (max-width: 991px) {
   #mainNav .navbar-nav {
     text-align: left;
+    z-index: 1000;
   }
 
   #mainNav .nav-item {
     padding: 5px 0;
   }
 }
+
 
 
   .navbar-expand-md .navbar-nav-scroll {
@@ -11075,6 +11079,13 @@ p {
 .intro {
   position: relative;
 }
+
+.scentlogo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 30%;
@@ -11366,4 +11377,84 @@ p {
   .modal-body {
     flex-direction: column;
   }
+}
+
+.scentlogo {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .scentlogo {
+    max-width: 180px;
+  }
+}
+
+.hero-video-section {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+/* Video */
+.hero-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+/* Contenido */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile */
+@media (max-width: 100px) {
+    .hero-video-section {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 100px) {
+    .hero-bg-video {
+        object-fit: none;
+    }
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content .btn {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero-content p {
+    animation-delay: 0.3s;
+}
+
+.hero-content .btn {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
