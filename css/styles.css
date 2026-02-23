@@ -147,7 +147,15 @@ body {
   margin: 15px 0 10px;
 }
 
-.perfume-card button {
+.perfume-card .price {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--bs-primary);
+  margin: 8px 0 12px;
+}
+
+.perfume-card button,
+.perfume-card a.btn {
   background-color: black;
   color: white;
   padding: 10px 20px;
@@ -155,10 +163,16 @@ body {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
 }
 
-.perfume-card button:hover {
+.perfume-card button:hover,
+.perfume-card a.btn:hover {
   background-color: #333;
+  color: white;
 }
 
 .perfume-container {
