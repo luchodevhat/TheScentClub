@@ -170,6 +170,12 @@ Full Stack Developer
 
 If you want to collaborate or have questions, feel free to reach out.
 
----
+## 🔮 Media
+
+<img width="1898" height="862" alt="image" src="https://github.com/user-attachments/assets/a87d2481-d433-4fb9-9806-da0431a61d31" />
+
+<img width="1897" height="861" alt="image" src="https://github.com/user-attachments/assets/944a261b-03b4-43c6-bdd3-5ef63bc3b95b" />
+
+
 
 ⭐ If you like this project, consider giving it a star on GitHub!
